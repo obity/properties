@@ -7,3 +7,11 @@ The Properties model represents a persistent set of properties. The Properties c
 
 It is thread-safe: multiple threads can share a single Properties object without the need for external synchronization.
 
+# Doc
+
+See this document at [GoDoc](https://pkg.go.dev/github.com/obity/properties)
+
+# Install
+    
+    go get -u github.com/obity/properties@latest
+
