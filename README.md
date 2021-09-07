@@ -8,6 +8,7 @@
 [![Downloads of releases](https://img.shields.io/github/downloads/obity/properties/total.svg?color=lavender)](https://github.com/obity/properties/releases/latest)
 [![Languages](https://img.shields.io/github/languages/top/obity/properties.svg?color=yellow)](#)
 [![GitHub go.mod Go version (subdirectory of monorepo)](https://img.shields.io/github/go-mod/go-version/obity/properties)](#)
+[![GPL3 licensed](https://img.shields.io/github/license/obity/properties.svg)](./LICENSE)
 
 Properties 是一个用于读写属性文件的Go库。Properties 可保存在流中或从流中加载。
 属性列表中每个键及其对应值都是一个字符串。它是线程安全的：多个线程可以共享单个 Properties 对象而无需进行外部同步。
