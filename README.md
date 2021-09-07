@@ -1,7 +1,7 @@
 # properties
 
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/obity/properties?color=peru)](https://github.com/obity/properties/releases/latest)
-[![Released API docs](https://img.shields.io/badge/godoc-reference-blue)](github.com/obity/properties)
+[![Released API docs](https://img.shields.io/badge/go-reference-blue?logo=go&logoColor=white)](github.com/obity/properties)
 [![Build](https://img.shields.io/github/workflow/status/obity/properties/Go.svg)](#)
 [![Go Report Card](https://goreportcard.com/badge/github.com/obity/properties?color=pink)](https://goreportcard.com/report/github.com/obity/properties)
 [![Lines of code](https://img.shields.io/tokei/lines/github/obity/properties.svg?color=beige)](#)
