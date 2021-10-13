@@ -133,6 +133,9 @@ func (p *Properties) line(key, value string, buf *bytes.Buffer) {
 
 func (p *Properties) parseLine(line []byte) {
 	lineStr := strings.TrimSpace(string(line))
+	if isCommentline(lineStr) {
+		return
+	}
 	splitStrs := strings.Split(lineStr, "=")
 	key := strings.TrimSpace(splitStrs[0])
 	value := strings.TrimSpace(splitStrs[1])
@@ -148,4 +151,15 @@ func (p *Properties) PropertyNames() []string {
 		names = append(names, k)
 	}
 	return names
+}
+
+// 过滤注释的行
+func isCommentline(line string) bool {
+	if len(line) == 0 {
+		return true
+	}
+	if strings.HasPrefix(line, "#") || strings.HasPrefix(line, "//") || strings.HasPrefix(line, "/*") {
+		return true
+	}
+	return false
 }

@@ -8,12 +8,13 @@ import (
 )
 
 func main() {
-	// store to file
+	var err error
+	//	store to file
 	p := properties.NewProperties()
 	p.SetProperty("HttpPort", "8081")
 	p.SetProperty("MongoServer", "mongodb://10.11.1.5,10.11.1.6,10.11.1.7/?replicaSet=mytest")
 	p.SetPropertySlice("LogLevel", "Debug", "Info", "Warn")
-	err := p.StoreToFile("config.properties")
+	err = p.StoreToFile("config.properties")
 	if err != nil {
 		log.Println(err)
 		return
